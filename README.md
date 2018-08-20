@@ -6,7 +6,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|image|text|null: false|
+|image|text||
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
@@ -19,12 +19,10 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|text|null: false, unique: true, index: true|
-|email|text|null: false, unique: true|
-|password|string|null: false|
 
 ### Association
 - has_many: messages
-- has_many: members
+- has_many: groups, through: :members
 
 
 ## groups table
@@ -34,7 +32,7 @@
 
 ### Association
 - has_many: messages
-- has_many: members
+- has_many: users, through: :members
 
 
 ## members table (中間テーブル)
