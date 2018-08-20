@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %title  Chatspace
+  %body
+    #wrapper
+      .sidebar
+        .user-info
+          = render "user-info"
+        .groups
+          = render "groups"
+          .group
+            .group__name
+            .group__message
+
+      .chatpage
+        .group
+        .message
+
+        .inputbox
