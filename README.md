@@ -20,7 +20,7 @@
 |------|----|-------|
 |name|text|null: false, unique: true, index: true|
 |email|text|null: false, unique: true|
-|password|integer|null: false|
+|password|string|null: false|
 
 ### Association
 - has_many: messages
