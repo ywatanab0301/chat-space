@@ -67,9 +67,10 @@
 
         .footer
           .footer__input
-            .footer__input--box
-              Type a message
-            .footer__input--image-button
-              %i.far.fa-image
+            %form
+              %label
+                %input.footer__input--box{:name => "body", type: "text", placeholder: "type a message" }
+                .footer__input--image-button
+                  %i.far.fa-image
             .footer__input--send-button
               Send
