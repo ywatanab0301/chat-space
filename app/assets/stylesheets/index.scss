@@ -3,14 +3,15 @@
   background-color: $sidebar-color;
   width: 300px;
   height: 100vh;
+  float: left;
     .user-info {
       background-color: $user-info-color;
       padding: 0 20px;
       font-size:16px;
       color: $sidebar-name-color;
       font-weight: bold;
-      height: 96px;
-      line-height: 96px;
+      height: 100px;
+      line-height: 100px;
       position: relative;
 
       .far{
@@ -47,6 +48,84 @@
         }
       }
     }
+}
+
+.chat {
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: $chat-color;
+  float: right;
+
+  .header {
+    height: 100px;
+    width: 100%;
+    background-color: $chat__header-color;
+    position: relative;
+
+    .header__group {
+      padding-top: 35px;
+
+      .header__group--name {
+        font-size: 20px;
+        padding: 0 0 15px 40px;
+        float:left;
+      }
+
+      .header__group--members {
+        font-size: 12px;
+        color: $header__members-color;
+        position: absolute;
+        top: 70px;
+        left: 40px;
+      }
+    }
+
+    .header__edit-button {
+      float: right;
+      border: solid 1px $skyblue;
+      position: absolute;
+      top: 28px;
+      right: 40px;
+      height: 40px;
+      width: 71px;
+      text-align: center;
+      line-height: 40px;
+      color: $skyblue;
+    }
+  }
+
+  .messages {
+    width: 100%;
+    border-top:solid 1px #eeeeee;
+    padding-top: 26px;
+
+    .message {
+      padding: 20px 0 20px 40px;
+
+      .message__username {
+        font-size: 16px;
+        font-weight: bold;
+        color: $message-color;
+        float: left;
+        padding-bottom: 10px;
+      }
+
+      .message__time {
+        color: $header__members-color;
+        font-size: 12px;
+        float: left;
+        padding: 0 0 0 10px;
+        line-height: 24px;
+      }
+
+      .message__text {
+        color: $message-color;
+        font-size: 14px;
+        clear: left;
+      }
+    }
+  }
+
 }
 
 
