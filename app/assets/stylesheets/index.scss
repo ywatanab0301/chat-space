@@ -6,9 +6,46 @@
     .user-info {
       background-color: $user-info-color;
       padding: 0 20px;
+      font-size:16px;
+      color: $sidebar-name-color;
+      font-weight: bold;
+      height: 96px;
+      line-height: 96px;
+      position: relative;
+
+      .far{
+        float: right;
+        position: absolute;
+        top: 39px;
+        left: 240px;
+        right: 0;
+        bottom: 28px;
+        color: $sidebar-name-color;
+      }
+      .fa {
+        float: right;
+        position: absolute;
+        top: 39px;
+        left: 265px;
+        right: 0;
+        bottom: 28px;
+        color: $sidebar-name-color;
+      }
+      p {
+        float: left;
+      }
     }
     .groups {
-      padding: 20px 0 40px;
+      padding: 0 20px;
+      .group {
+              @include group;
+        .group__name {
+                    @include group__name;
+          }
+        .group__message {
+                    @include group__message;
+        }
+      }
     }
 }
 
