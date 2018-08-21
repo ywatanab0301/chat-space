@@ -55,6 +55,7 @@
   width: calc(100vw - 300px);
   background-color: $chat-color;
   float: right;
+  position: relative;
 
   .header {
     height: 100px;
@@ -126,6 +127,52 @@
     }
   }
 
+  .footer {
+    position: absolute;
+    bottom: 0;
+    background-color: $footer-color;
+    width: 100%;
+    height: 90px;
+
+    .footer__input {
+      position:relative;
+
+      .footer__input--box {
+        padding-left: 10px;
+        height: 50px;
+        font-size:16px;
+        line-height: 50px;
+        color: $message-color;
+        background-color: $chat-color;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        right: 160px;
+        bottom: 20px;
+        float:left
+      }
+
+      .footer__input--image-button {
+        position: absolute;
+        top: 35px;
+        right: 170px;
+        background-color: $chat-color;
+        height: 20px;
+        width: 20px;
+      }
+
+      .footer__input--send-button {
+        padding: 0 30px 0 30px;
+        height: 50px;
+        background-color: $skyblue;
+        color: $sidebar-name-color;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        line-height: 50px;
+      }
+    }
+  }
 }
 
 
