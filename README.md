@@ -18,7 +18,7 @@
 ## users table
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false, unique: true, index: true|
+|name|string|null: false, unique: true, index: true|
 
 ### Association
 - has_many: messages
