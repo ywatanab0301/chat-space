@@ -1,0 +1,17 @@
+.heading
+  %p
+    チャットグループが作成されました。
+  .wrapper
+    .sidebar
+      .user-info
+        = render "user-info"
+      .groups
+        = render "group"
+
+    .chat
+      .header
+        =render "header-group"
+      .messages
+        =render "message"
+      .footer
+        =render "input"

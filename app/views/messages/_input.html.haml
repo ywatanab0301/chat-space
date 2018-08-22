@@ -1,0 +1,10 @@
+.footer__input
+  %form
+    %label
+      %input.footer__input--box{:name => "body", type: "text", placeholder: "type a message" }
+      .footer__input--send-button
+        Send
+    %label
+      %img.footer__input--image-button
+        = fa_icon "image"
+        %input{:name => "image", type: "file", id: "sendfile"}

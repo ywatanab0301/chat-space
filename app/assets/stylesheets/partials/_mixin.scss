@@ -1,0 +1,14 @@
+@mixin group {
+    padding: 20px 0 40px;
+}
+
+@mixin group__name {
+    font-size: 15px;
+    color: $sidebar-name-color;
+    margin-bottom: 5px;
+}
+
+@mixin group__message {
+    font-size: 11px;
+    color: $sidebar-name-color;
+  }
