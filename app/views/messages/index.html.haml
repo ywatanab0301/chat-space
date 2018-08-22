@@ -9,70 +9,22 @@
         .user-info
           = render "user-info"
         .groups
-          .group
-            .group__name
-              = render "group__name"
-            .group__message
-              = render "group__message"
-          .group
-            .group__name
-              = render "group__name"
-            .group__message
-              = render "group__message"
-          .group
-            .group__name
-              = render "group__name"
-            .group__message
-              = render "group__message"
+          = render "group"
+          = render "group"
+          = render "group"
+          = render "group"
 
       .chat
         .header
-          .header__group
-            .header__group--name
-              Sampleグループ
-            .header__group--members
-              Member: marumaru sankakusankaku
-          .header__edit-button
-            Edit
+          =render "header-group"
         .messages
-          .message
-            .message__username
-              username
-            .message__time
-              2018/08/21 18:40
-            .message__text
-              ファイトー！
-          .message
-            .message__username
-              username
-            .message__time
-              2018/08/21 18:40
-            .message__text
-              ファイトー！
-          .message
-            .message__username
-              username
-            .message__time
-              2018/08/21 18:40
-            .message__text
-              ファイトー！
-          .message
-            .message__username
-              username
-            .message__time
-              2018/08/21 18:40
-            .message__text
-              ファイトー！
+          =render "message"
+          =render "message"
+          =render "message"
+          =render "message"
+          =render "message"
+          =render "message"
 
 
         .footer
-          .footer__input
-            %form
-              %label
-                %input.footer__input--box{:name => "body", type: "text", placeholder: "type a message" }
-                .footer__input--send-button
-                  Send
-              %label
-                %img.footer__input--image-button
-                  %i.far.fa-image
-                  %input{:name => "image", type: "file", id: "sendfile"}
+          =render "input"
