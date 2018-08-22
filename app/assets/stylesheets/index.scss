@@ -39,12 +39,12 @@
     .groups {
       padding: 0 20px;
       .group {
-              @include group;
+          @include group;
         &__name {
-                    @include group__name;
+            @include group__name;
           }
         &__message {
-                    @include group__message;
+            @include group__message;
         }
       }
     }
