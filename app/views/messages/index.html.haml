@@ -9,24 +9,22 @@
         .user-info
           = render "user-info"
         .groups
-          .group
-            .group__name
-              = render "group__name"
-            .group__message
-              = render "group__message"
-          .group
-            .group__name
-              = render "group__name"
-            .group__message
-              = render "group__message"
-          .group
-            .group__name
-              = render "group__name"
-            .group__message
-              = render "group__message"
+          = render "group"
+          = render "group"
+          = render "group"
+          = render "group"
 
-      .chatpage
-        .group
-        .message
+      .chat
+        .header
+          =render "header-group"
+        .messages
+          =render "message"
+          =render "message"
+          =render "message"
+          =render "message"
+          =render "message"
+          =render "message"
 
-        .inputbox
+
+        .footer
+          =render "input"
