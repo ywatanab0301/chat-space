@@ -1,9 +1,10 @@
-%p Username
+%p
+  = current_user.name
 
 %ul
   %li
     .account-button
-      = link_to "#" do
+      = link_to edit_user_path do
         = fa_icon "cog"
   %li
     .new-button
