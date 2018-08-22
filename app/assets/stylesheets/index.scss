@@ -14,28 +14,30 @@
       line-height: 100px;
       position: relative;
 
-      .far{
-        float: right;
+      .fa.fa-cog {
         position: absolute;
-        top: 39px;
-        left: 240px;
+        top: 43px;
+        left: 266px;
         right: 0;
-        bottom: 28px;
+        bottom: 40px;
+        float: right;
         color: $sidebar-name-color;
       }
-      .fa {
-        float: right;
+
+      .fa.fa-edit {
         position: absolute;
-        top: 39px;
-        left: 265px;
+        top: 43px;
+        left: 245px;
         right: 0;
-        bottom: 28px;
+        bottom: 40px;
+        float: right;
         color: $sidebar-name-color;
       }
       p {
         float: left;
       }
     }
+
     .groups {
       padding: 0 20px;
       .group {
@@ -153,7 +155,7 @@
         float:left
         }
 
-      .far.fa-image {
+      .fa.fa-image {
         position: absolute;
         top: 38px;
         right: 170px;

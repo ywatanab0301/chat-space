@@ -1,11 +1,12 @@
 %p Username
 
 %ul
-.new-button
-  = link_to "#" do
-    %li
-      %i.fa.fa-cog
-.account-button
-  = link_to '#' do
-    %li
-      %i.far.fa-edit
+  %li
+    .account-button
+      = link_to '#' do
+        = fa_icon "cog"
+  %li
+    .new-button
+      = link_to "#" do
+        = fa_icon "edit"
+
