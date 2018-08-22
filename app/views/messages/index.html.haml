@@ -70,7 +70,9 @@
             %form
               %label
                 %input.footer__input--box{:name => "body", type: "text", placeholder: "type a message" }
-                .footer__input--image-button
+                .footer__input--send-button
+                  Send
+              %label
+                %img.footer__input--image-button
                   %i.far.fa-image
-            .footer__input--send-button
-              Send
+                  %input{:name => "image", type: "file", id: "sendfile"}

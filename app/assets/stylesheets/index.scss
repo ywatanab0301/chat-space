@@ -153,13 +153,17 @@
         float:left
         }
 
-      .footer__input--image-button {
+      .far.fa-image {
         position: absolute;
-        top: 35px;
+        top: 38px;
         right: 170px;
         background-color: $chat-color;
         height: 20px;
         width: 20px;
+      }
+
+      #sendfile {
+        display: none;
       }
 
       .footer__input--send-button {
