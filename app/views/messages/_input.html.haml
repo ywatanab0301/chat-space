@@ -1,10 +1,8 @@
 .footer__input
-  %form
-    %label
-      %input.footer__input--box{:name => "body", type: "text", placeholder: "type a message" }
-      .footer__input--send-button
-        Send
-    %label
-      %img.footer__input--image-button
-        = fa_icon "image"
-        %input{:name => "image", type: "file", id: "sendfile"}
+  = form_for [@group, @message] do |f|
+    = f.text_field :body, class: "footer__input--box", placeholder: "type a message"
+    .footer__input__mask
+      = f.label :image, class: 'footer__input__mask__image' do
+        = fa_icon 'image'
+        = f.file_field :image, class: 'hidden'
+    = f.submit 'Send', class: "footer__input--send-button"

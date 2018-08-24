@@ -1,23 +1,11 @@
 .message
   .message__username
-    username
+    = message.user.name
   .message__time
-    2018/08/21 18:40
+    = message.created_at
   .message__text
-    ファイトー！
+    -if message.body.present?
+      = message.body
+    = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
 
-.message
-  .message__username
-    username
-  .message__time
-    2018/08/21 18:50
-  .message__text
-    こんばんわ
 
-.message
-  .message__username
-    username
-  .message__time
-    2018/08/21 18:54
-  .message__text
-    おはよう
