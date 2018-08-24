@@ -1,7 +1,6 @@
 .sidebar {
   background-color: $sidebar-color;
   width: 300px;
-  height: 100vh;
   float: left;
 
     .user-info {
@@ -31,13 +30,18 @@
 
     .groups {
       padding: 0 20px;
+      height: calc(100vh - 100px);
       .group {
-          @include group;
-        &__name {
-            @include group__name;
-          }
-        &__message {
-            @include group__message;
+        padding: 20px 0 40px;
+
+        .group__name {
+          font-size: 15px;
+          color: $white;
+          margin-bottom: 5px;
+        }
+        .group__message {
+          font-size: 11px;
+          color: $white;;
         }
       }
     }
@@ -93,6 +97,8 @@
     width: 100%;
     border-top:solid 1px $upper-border-color;
     padding-top: 26px;
+    overflow: scroll;
+    height: calc(100vh - 100px - 90px);
 
     .message {
       padding: 20px 0 20px 40px;
@@ -147,7 +153,7 @@
         float:left
         }
 
-      .fa.fa-image {
+      .footer__input__mask__image {
         position: absolute;
         top: 38px;
         right: 170px;
@@ -156,7 +162,7 @@
         color: $black;
       }
 
-      #sendfile {
+      .hidden {
         display: none;
       }
 
