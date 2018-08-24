@@ -1,8 +1,10 @@
 .header__group
   .header__group--name
-    Sampleグループ
+    = @group.name
   .header__group--members
-    Member: marumaru sankakusankaku
+    Member:
+    - @group.users.each do |user|
+      = user.name
 .header__edit-button
   = link_to "#" do
     Edit
