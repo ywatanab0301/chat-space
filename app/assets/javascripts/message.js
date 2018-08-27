@@ -26,6 +26,7 @@ $(function(){
       $('.messages').append(html);
       $('.footer__input--send-button').prop('disabled', false)
       $('.footer__input--box').val('');
+      $('.hidden').val('');
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
     })
     .fail(function(){
