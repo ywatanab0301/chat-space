@@ -1,9 +1,11 @@
 $(function(){
   function buildHTML(message){
+    var image = message.image !== null ? `<img class="lower-message__image" src=${message.image}></img>`:"";
     var html = `<div class="message">
                   <div class="message__username">${message.name}</div>
                   <div class="message__time">${message.time}</div>
                   <div class="message__text">${message.body}</div>
+                  <div class="lower-message__image">${image}</div>
                 </div>`
     return html;
   }
