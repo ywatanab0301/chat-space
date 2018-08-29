@@ -23,7 +23,6 @@ function appendMember(memberName, memberUser) {
                 <a class='user-search-remove chat-group-user__btn chat-group-user__btn--remove js-remove-btn'>削除</a>
               </div>`
 memberList.append(html)
-console.log(html)
 }
 
   $("#user-search-field").on("keyup", function(){
@@ -54,16 +53,13 @@ console.log(html)
   });
 
   $(document).on("click", ".chat-group-user__btn--add", function() {
-    console.log(this);
     $(this).parent().remove();
     var memberName = $(this).attr('data-user-name')
     var memberUser = $(this).attr('data-user-id')
-    console.log(memberName, memberUser)
     appendMember(memberName, memberUser)
   })
 
   $(document).on("click", ".chat-group-user__btn--remove.js-remove-btn", function(){
-    console.log(this)
     $(this).parent().remove();
   })
 });
