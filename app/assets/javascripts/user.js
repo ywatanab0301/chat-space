@@ -43,6 +43,8 @@ function appendNoUser(user) {
   });
 });
 
+
+
 $(function(){
 
 var member_list = $(".chat-group-users")
@@ -63,5 +65,13 @@ member_list.append(html)
     var member_user_id = $(this).attr('data-user-id')
     console.log(member_name, member_user_id)
     appendMember(member_name, member_user_id)
+  })
+})
+
+
+$(function(){
+  $(document).on("click", ".chat-group-user__btn--remove.js-remove-btn", function(){
+    console.log(this)
+    $(this).parent().remove();
   })
 })
