@@ -139,17 +139,18 @@
       position:relative;
 
       &--box {
-        padding-left: 10px;
+        padding: 0 0 0 10px;
         width: 81%;
         height: 50px;
         font-size:16px;
         line-height: 50px;
         color: $message-color;
         background-color: $chat-color;
+        width: calc(100% - 220px);
         position: absolute;
         top: 20px;
         left: 50px;
-        right: 160px;
+        right: 170px;
         bottom: 20px;
         float:left
         }
@@ -161,6 +162,7 @@
         height: 20px;
         width: 20px;
         color: $black;
+        padding-right: 10px;
       }
 
       .hidden {
@@ -168,6 +170,7 @@
       }
 
       &--send-button {
+        margin-left: 15px;
         padding: 0 30px 0 30px;
         height: 52px;
         background-color: $skyblue;
