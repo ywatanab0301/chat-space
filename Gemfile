@@ -64,6 +64,11 @@ gem 'font-awesome-rails'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'capistrano'
+gem 'capistrano-rbenv'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'capistrano3-unicorn'
 
 group :test do
   gem 'rails-controller-testing'
